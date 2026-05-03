@@ -2,7 +2,12 @@
    Keltan Voyce Portfolio — style.css
    ───────────────────────────────────────── */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Courier+Prime:wght@400;700&display=swap');
+@font-face {
+  font-family: 'Akira Expanded';
+  src: url('../fonts/Akira Expanded Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* ── RESET ── */
 *, *::before, *::after {
@@ -20,8 +25,8 @@
   --border-hover:#444;
   --nav-h:       64px;
   --margin-w:    120px;
-  --font-serif:  'Playfair Display', Georgia, serif;
-  --font-mono:   'Courier Prime', 'Courier New', monospace;
+  --font-serif:  'Akira Expanded', Georgia, serif;
+  --font-mono:   'Akira Expanded', 'Courier New', monospace;
 }
 
 /* ── BASE ── */

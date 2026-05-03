@@ -2,13 +2,19 @@
    Keltan Voyce Portfolio — main.js
    ───────────────────────────────────────── */
 
-/* Fade page in on load */
+/* Fade page in on load and back-forward cache restore */
+function fadeIn() {
+  document.body.style.transition = 'opacity 0.4s ease';
+  document.body.style.opacity = '1';
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   document.body.style.opacity = '0';
-  document.body.style.transition = 'opacity 0.4s ease';
-  requestAnimationFrame(() => {
-    document.body.style.opacity = '1';
-  });
+  requestAnimationFrame(fadeIn);
+});
+
+window.addEventListener('pageshow', (e) => {
+  if (e.persisted) fadeIn();
 });
 
 /* Smooth page transitions on internal links */

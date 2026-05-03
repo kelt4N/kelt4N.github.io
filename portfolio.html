@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keltan Voyce — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <a class="nav-left" href="index.html">
+      <div class="nav-avatar">
+        <!-- Replace with your photo: <img src="images/profile.jpg" alt="Keltan Voyce"> -->
+        <span class="initials">KV</span>
+      </div>
+      <span class="nav-name">Keltan Voyce</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="about.html">About</a>
+    </div>
+
+    <div class="nav-icons">
+      <a href="mailto:your@email.com" title="Email" aria-label="Send email">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" title="LinkedIn" aria-label="LinkedIn profile" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ── MAIN ── -->
+  <main>
+
+    <!-- Spinning title -->
+    <section class="title-section">
+      <h1 class="spin-title">My Work</h1>
+    </section>
+
+    <!-- Gallery with side art margins -->
+    <div class="gallery-wrapper">
+
+      <!-- LEFT MARGIN — place your custom art here -->
+      <aside class="side-margin left" aria-hidden="true">
+        <div class="side-art-deco"></div>
+        <!--
+          CUSTOM ART SLOT (LEFT)
+          Replace this comment with an <img> or inline <svg>:
+          <img src="images/art-left.png" alt="" class="side-art-img">
+        -->
+        <span class="side-art-placeholder">Art</span>
+        <div class="side-art-deco"></div>
+      </aside>
+
+      <!-- GALLERY GRID -->
+      <div class="gallery-grid">
+
+        <a class="gallery-item" href="projects/project-01.html">
+          <div class="gallery-item-inner">
+            <!-- Replace with your image: <img src="images/projects/project-01.jpg" alt="Project name"> -->
+            <div class="img-placeholder img-1"></div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="overlay-title">Project Title</span>
+            <span class="overlay-sub">Category · 2024</span>
+            <span class="overlay-arrow">→</span>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="projects/project-02.html">
+          <div class="gallery-item-inner">
+            <div class="img-placeholder img-2"></div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="overlay-title">Project Title</span>
+            <span class="overlay-sub">Category · 2024</span>
+            <span class="overlay-arrow">→</span>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="projects/project-03.html">
+          <div class="gallery-item-inner">
+            <div class="img-placeholder img-3"></div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="overlay-title">Project Title</span>
+            <span class="overlay-sub">Category · 2024</span>
+            <span class="overlay-arrow">→</span>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="projects/project-04.html">
+          <div class="gallery-item-inner">
+            <div class="img-placeholder img-4"></div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="overlay-title">Project Title</span>
+            <span class="overlay-sub">Category · 2024</span>
+            <span class="overlay-arrow">→</span>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="projects/project-05.html">
+          <div class="gallery-item-inner">
+            <div class="img-placeholder img-5"></div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="overlay-title">Project Title</span>
+            <span class="overlay-sub">Category · 2024</span>
+            <span class="overlay-arrow">→</span>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="projects/project-06.html">
+          <div class="gallery-item-inner">
+            <div class="img-placeholder img-6"></div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="overlay-title">Project Title</span>
+            <span class="overlay-sub">Category · 2024</span>
+            <span class="overlay-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- ADD MORE PROJECTS: copy a gallery-item block and increment the number -->
+
+      </div>
+
+      <!-- RIGHT MARGIN — place your custom art here -->
+      <aside class="side-margin right" aria-hidden="true">
+        <div class="side-art-deco"></div>
+        <!--
+          CUSTOM ART SLOT (RIGHT)
+          <img src="images/art-right.png" alt="" class="side-art-img">
+        -->
+        <span class="side-art-placeholder">Art</span>
+        <div class="side-art-deco"></div>
+      </aside>
+
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

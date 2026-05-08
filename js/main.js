@@ -16,14 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('light');
   }
 
-  const toggle = document.getElementById('theme-switch');
-  if (toggle) {
-    toggle.checked = document.body.classList.contains('light');
+  const isLight = document.body.classList.contains('light');
+  document.querySelectorAll('.theme-switch').forEach(toggle => {
+    toggle.checked = isLight;
     toggle.addEventListener('change', () => {
-      document.body.classList.toggle('light', toggle.checked);
-      localStorage.setItem('theme', toggle.checked ? 'light' : 'dark');
+      const on = toggle.checked;
+      document.body.classList.toggle('light', on);
+      localStorage.setItem('theme', on ? 'light' : 'dark');
+      document.querySelectorAll('.theme-switch').forEach(t => t.checked = on);
     });
-  }
+  });
 
   requestAnimationFrame(fadeIn);
 });

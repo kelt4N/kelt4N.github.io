@@ -269,6 +269,12 @@ main {
   background: rgba(240, 236, 227, 0.05);
 }
 
+.home-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 /* ─────────────────────────────────────────
    PORTFOLIO PAGE
    ───────────────────────────────────────── */

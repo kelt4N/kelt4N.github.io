@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const galleryGrid = document.querySelector('.gallery-grid');
   if (spinTitle && galleryGrid) {
     const setWidth = () => {
-      galleryGrid.style.width = spinTitle.offsetWidth + 'px';
+      galleryGrid.style.width = (spinTitle.offsetWidth + 48) + 'px';
     };
     document.fonts.ready.then(setWidth);
     window.addEventListener('resize', () => document.fonts.ready.then(setWidth));

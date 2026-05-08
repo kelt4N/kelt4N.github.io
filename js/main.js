@@ -10,6 +10,21 @@ function fadeIn() {
 
 document.addEventListener('DOMContentLoaded', () => {
   document.body.style.opacity = '0';
+
+  /* Apply saved theme before fade-in to avoid flash */
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add('light');
+  }
+
+  const toggle = document.getElementById('theme-switch');
+  if (toggle) {
+    toggle.checked = document.body.classList.contains('light');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('light', toggle.checked);
+      localStorage.setItem('theme', toggle.checked ? 'light' : 'dark');
+    });
+  }
+
   requestAnimationFrame(fadeIn);
 });
 

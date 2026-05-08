@@ -27,15 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* Match gallery width to the My Work title */
+  /* Match gallery width to the My Work title — wait for font to load first */
   const spinTitle = document.querySelector('.spin-title');
   const galleryGrid = document.querySelector('.gallery-grid');
   if (spinTitle && galleryGrid) {
     const setWidth = () => {
       galleryGrid.style.width = spinTitle.offsetWidth + 'px';
     };
-    setWidth();
-    window.addEventListener('resize', setWidth);
+    document.fonts.ready.then(setWidth);
+    window.addEventListener('resize', () => document.fonts.ready.then(setWidth));
   }
 
   requestAnimationFrame(fadeIn);

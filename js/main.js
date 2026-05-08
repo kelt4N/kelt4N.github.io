@@ -27,6 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* Match gallery width to the My Work title */
+  const spinTitle = document.querySelector('.spin-title');
+  const galleryGrid = document.querySelector('.gallery-grid');
+  if (spinTitle && galleryGrid) {
+    const setWidth = () => {
+      galleryGrid.style.width = spinTitle.offsetWidth + 'px';
+    };
+    setWidth();
+    window.addEventListener('resize', setWidth);
+  }
+
   requestAnimationFrame(fadeIn);
 });
 
